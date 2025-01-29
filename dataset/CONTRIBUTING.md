@@ -2,9 +2,9 @@
 
 Saiba como contribuir com a documentação deste conjunto de dados!
 
-A documentação deste conjunto de dados está sendo feita de forma aberta e colaborativa no [Github](https://github.com/thiagomrm/Sifilis). Existem duas alternativas para enviar sua contribuição:
+A documentação deste conjunto de dados está sendo feita de forma aberta e colaborativa no [Github](https://github.com/dvccsesmg/violencia_geral). Existem duas alternativas para enviar sua contribuição:
 
-- [Pull requests](https://github.com/thiagomrm/Sifilis/pulls): Para sugerir uma alteração concreta na documentação.
+- [Pull requests](https://github.com/dvccsesmg/violencia_geral/pulls): Para sugerir uma alteração concreta na documentação.
 
 Todas as contribuições são bem vindas. Alguns exemplos são:
 
