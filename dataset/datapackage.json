@@ -238,7 +238,7 @@
       "dialect": {
         "delimiter": ";"
       } 
-    },
-  ],
+    }
+  ]
   "profile": "data-package"
 }
