@@ -238,6 +238,20 @@
       "dialect": {
         "delimiter": ";"
       } 
+    },
+    {
+      "path": "data/dados_violencia_SES_2025.csv",
+      "name": "dados_violencia_ses_2025",
+      "title": "Violência Geral SES 2025",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": "schemas/schema_v1.json",
+      "dialect": {
+        "delimiter": ";"
+      } 
     }
   ],
   "profile": "data-package"
