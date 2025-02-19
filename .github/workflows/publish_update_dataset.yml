@@ -30,9 +30,9 @@ jobs:
 #      - name: Local dataset validation
 #        run: task validate
 #      - name: Commit new datapackage_validation.json
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Cria datapackage_validation.json via script.
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Cria datapackage_validation.json via script.
 #      - name: Create Report
 #        continue-on-error: true
 #        run: task report
