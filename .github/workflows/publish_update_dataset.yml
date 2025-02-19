@@ -1,6 +1,7 @@
 name: CKAN
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'dataset/**'
@@ -15,29 +16,29 @@ jobs:
           fetch-depth: 0
       - name: Install packages
         run: pip install -r requirements.txt
-      - name: Commit CSV
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Converte Excel para CSV via script.
+#      - name: Commit CSV
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Converte Excel para CSV via script.
       - name: Create dynamic documentation
         run: task documentation
       - name: Commit markdown files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
            commit_message: Cria arquivos markdown via script.
-      - name: Local dataset validation
-        run: task validate
-      - name: Commit new datapackage_validation.json
+#      - name: Local dataset validation
+#        run: task validate
+#      - name: Commit new datapackage_validation.json
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Cria datapackage_validation.json via script.
-      - name: Create Report
-        continue-on-error: true
-        run: task report
-      - name: Commit new index.html report file.
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Cria arquivo index.html de validação.
+#      - name: Create Report
+#        continue-on-error: true
+#        run: task report
+#      - name: Commit new index.html report file.
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Cria arquivo index.html de validação.
       - id: string
         uses: ASzc/change-string-case-action@v1
         with:
